@@ -1,0 +1,63 @@
+//theming
+@import "theming/theming";
+
+//bootstrap core
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+//general
+@import "general/custom-var";
+@import "general/mixins";
+//atoms
+@import "atoms/a-shadow";
+@import "atoms/a-fonts";
+@import "atoms/a-button";
+@import "atoms/a-link";
+@import "atoms/a-g-placeholder";
+@import "atoms/a-sticky-helper";
+//molecules
+@import "molecules/m-headline";
+@import "molecules/m-header-card";
+@import "molecules/m-story-card";
+@import "molecules/m-custom-card";
+@import "molecules/m-external-ass-card";
+@import "molecules/m-dev-community-card";
+@import "molecules/m-writer";
+@import "molecules/m-tag-frame";
+@import "molecules/m-img-frame";
+//organisms
+@import "organisms/o-navigation";
+@import "organisms/o-latest-topics-card";
+@import "organisms/o-profession-card";
+@import "organisms/o-pricing-card";
+//templates
+@import 'templates/t-main-frame';
+//pages
+@import "pages/p-single-story";
+@import "pages/p-single-profession";
+@import "pages/p-professions";
+@import "pages/p-dev-community";
+
+.nav-link.active {
+  color: $primary;
+  font-weight: 700;
+}
+.router-link-active {
+  color: $primary;
+  font-weight: 700;
+}
+.link-frame-active {
+
+  .nav-link {
+    color: $primary;
+    font-weight: 700;
+  }
+}
+.navbar-toggler {
+  border: 1px solid transparent;
+}
+
+footer {
+  background: $secondary;
+  color: $white;
+  padding: 30px 0;
+}

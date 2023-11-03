@@ -1,0 +1,12 @@
+.o-pricing-card {
+  height: 100%;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    top: -25px;
+    left: 13px;
+    max-width: 350px;
+    opacity: 0.1;
+  }
+}

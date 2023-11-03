@@ -1,0 +1,16 @@
+.m-tag-frame {
+  border-radius: $border-radius;
+  padding: 20px;
+  background: $white;
+
+  h6 {
+    color: $secondary;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    margin-bottom: 5px;
+  }
+  .back-action {
+    margin-top: 10px;
+    display: inline-block;
+  }
+}

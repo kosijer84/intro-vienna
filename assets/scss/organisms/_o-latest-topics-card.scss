@@ -1,0 +1,43 @@
+.o-latest-topics-card {
+  border-radius: $border-radius;
+  padding: 20px;
+  background: $white;
+
+  &-link {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    text-decoration: none;
+    color: $secondary;
+    background: $white;
+    border-radius: $border-radius;
+    overflow: hidden;
+
+    @include shadowEffect;
+  }
+
+  .m-headline {
+
+    p {
+      margin-bottom: 0;
+      font-size: 14px;
+
+      @include line-clamp(2);
+    }
+  }
+
+  h5 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px!important;
+
+    @include line-clamp(2);
+  }
+  img {
+    max-width: 115px;
+    object-fit: cover;
+    width: 100%;
+    height: 120px;
+    margin-right: 15px;
+  }
+}

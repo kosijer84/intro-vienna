@@ -1,0 +1,18 @@
+.m-story-card {
+  height: 100%;
+
+  @include shadowEffect;
+
+  .card-img-top {
+    max-height: 140px;
+    object-fit: cover;
+
+    @include media-breakpoint-up(xxl) {
+      max-height: 180px;
+    }
+  }
+  .card-title {
+
+    @include line-clamp(2)
+  }
+}

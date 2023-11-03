@@ -1,0 +1,12 @@
+.t-main-frame {
+  position: relative;
+  min-height: calc(100vh - 56px);
+  margin-top: 56px;
+  padding-bottom: 60px;
+  background: $gray-100;
+
+  .m-paypal-support-card {
+
+    @include stickyElement(80px)
+  }
+}

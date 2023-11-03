@@ -1,0 +1,61 @@
+.m-img-frame {
+  position: relative;
+  border-radius: $border-radius;
+  overflow: hidden;
+  z-index: $zindex-front;
+
+  &:after {
+    @include image-overlay;
+  }
+  &-content {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: $white;
+    padding: 5px 15px;
+    border-radius: $border-radius;
+    z-index: $zindex-front;
+
+    .m-headline {
+
+      .bg-title {
+        color: rgba($gray-200, .3)
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      width: 75%;
+      bottom: 30px;
+      left: 30px;
+    }
+  }
+  &-tag-name {
+    position: absolute;
+    text-transform: uppercase;
+    bottom: 10px;
+    left: 10px;
+    padding: 5px 15px;
+    color: $white;
+    background: rgba($primary, .6);
+    border-radius: $border-radius;
+    z-index: $zindex-front;
+
+    @include media-breakpoint-up(md) {
+      bottom: 30px;
+      left: 30px;
+    }
+  }
+
+  img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    z-index: $zindex-bellow;
+
+    @include media-breakpoint-up(md) {
+      height: 380px;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.p-single-story {
+  padding: 30px 0;
+  border-bottom: 1px solid $gray-500;
+
+  .m-story-card {
+    height: auto;
+
+    @include stickyElement(80px)
+  }
+  .m-dev-community-card {
+
+    @include stickyElement(80px)
+  }
+}

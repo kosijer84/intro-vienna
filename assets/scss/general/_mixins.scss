@@ -1,0 +1,29 @@
+@mixin image-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg,rgba(0,0,0,.6),rgba(0,0,0,.1));
+  z-index: $zindex-bellow;
+}
+@mixin stickyElement($top: 70px) {
+  position: sticky;
+  top: $top
+}
+@mixin shadowEffect() {
+  border: none;
+  box-shadow: 0 0 4px rgba($black,.15);
+  transition: all .2s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 10px 50px rgba(67,67,68,.071);
+  }
+}
+@mixin line-clamp($lines: 3) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

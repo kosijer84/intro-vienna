@@ -1,0 +1,35 @@
+.m-headline {
+  position: relative;
+  background: transparent;
+  margin-bottom: 10px;
+
+  .bg-title {
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    line-height: .8;
+    z-index: -1;
+    color: $gray-200;
+    font-weight: 700;
+
+    @include media-breakpoint-up(md) {
+      top: -20px;
+      left: -35px;
+    }
+  }
+  .btn-link {
+    color: $secondary;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    padding: 0;
+    font-weight: bold;
+
+    i {
+      color: $primary;
+      font-size: 20px;
+      margin-left: 5px;
+    }
+  }
+}

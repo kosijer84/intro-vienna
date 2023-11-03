@@ -1,0 +1,91 @@
+.m-header-card {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  margin: 30px 0;
+  border-radius: $border-radius;
+  overflow: hidden;
+  z-index: $zindex-front;
+
+  &:after {
+    @include image-overlay;
+  }
+
+  &-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: $zindex-bellow;
+  }
+  &-content {
+    color: $white;
+    padding: 80px 24px;
+
+    @include media-breakpoint-up(md) {
+      padding: 104px 66px 85px;
+    }
+  }
+  &-skeleton {
+    width: 100%;
+    min-height: 380px;
+    margin: 30px 0;
+    background: $gray-200;
+    padding: 104px 0 66px 85px;
+    border-radius: $border-radius;
+
+    &-title {
+      width: 40%;
+      height: 40px;
+      margin-bottom: 20px;
+      background: $gray-500;
+      border-radius: $border-radius;
+    }
+    &-subtitle {
+      width: 70%;
+      height: 20px;
+      background: $gray-500;
+      border-radius: $border-radius;
+    }
+    &-writer {
+      display: flex;
+      align-items: center;
+
+      &-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: $gray-500;
+        margin-right: 15px;
+      }
+      &-name {
+        width: 30%;
+        height: 20px;
+        background: $gray-500;
+        border-radius: $border-radius;
+        margin-bottom: 5px;
+      }
+      &-date {
+        width: 20%;
+        height: 10px;
+        background: $gray-500;
+        border-radius: $border-radius;
+      }
+    }
+  }
+
+  .m-headline {
+
+    .bg-title {
+      color: rgba($gray-200, .7)
+    }
+  }
+  .m-writer {
+
+    h5 {
+      color: $white;
+    }
+  }
+}
