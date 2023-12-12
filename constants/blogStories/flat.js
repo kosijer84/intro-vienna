@@ -39,6 +39,7 @@ export const FLAT_STORY = [
           <p>Mesečna cena je <b>paušalna</b> i na kraju godine se sve sabira i oduzima i naravno ako ima viška provajder vam vraća novac, manjak naplaćuje dodatno.
           </p>
           <p>Što ste više godina kod jednog provajdera, sve je tačniji mesečni paušalni proračun.
+          <b>Naš trenutni mesečni paušalni proračun je 140 eur.</b>
           </p>`,
       }
     ],

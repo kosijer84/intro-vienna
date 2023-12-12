@@ -17,7 +17,7 @@ export const COST_STORY = [
             Naravno ovo je minimalni trošak.
           </p>
           <p>
-            Celodnevni boravak iznosi oko 500eur po detetu sa tim da u školi dobiju obrok i odrade domaći sa njima koji neko od učitelja proveri. <br>
+            Celodnevni boravak iznosi oko <b>500eur</b> po detetu sa tim da u školi dobiju obrok i odrade domaći sa njima koji neko od učitelja proveri. <br>
             Pored svega ovoga škola nudi dodatne aktivnosti zavisno od škole, fudbal, aikido, košarka, balet, itd... <br>
             <b>Svaka aktivnost se plaća po semestru tj polugodištu.</b>
           </p>
@@ -131,14 +131,15 @@ export const COST_STORY = [
             <li class="list-group-item d-flex justify-content-between align-items-start">
               <div class="ms-2 me-auto">
                 <div class="fw-bold">Ukupno</div>
-                Ukupni fiksni troškovi za automobil na mesečnom nivou.
+                Naši ukupni fiksni troškovi za automobil na mesečnom nivou.
               </div>
               <span class="badge bg-primary rounded-pill">Oko 340 eur</span>
             </li>
           </ol>
           <p class="mt-4">
             Ukoliko imate automobil, nisam siguran da li možete nešto da učinite da umanjite mesečni trošak, možda da 
-            isključite rentanje garaže ali opet morate platiti parking koji je malo jeftinji.
+            isključite rentanje garaže ali opet morate platiti parking koji je jeftinji.
+            <b>Sve ovo je na dan 14.10.2023. godine</b>
           </p>`,
       }
     ],
@@ -233,6 +234,7 @@ export const COST_STORY = [
            <p class="mt-4">
             <b>Sve ovo može malo i da se smanji naravno, manji stan, stariji stan, ne rentirati garažu.</b><br>
             Svodi se na to da realno jedna prosečna plata odlazi na fiksne troškove. Naravno, tu još dolazi i 13 i 14 plata ali treba ih dočekati :).
+            <b>Sve ovo je na dan 14.10.2023. godine.</b>
           </p>`,
       }
     ],

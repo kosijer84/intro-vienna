@@ -108,7 +108,18 @@
       </div>
       <div class="col-md-4 col-lg-3 mt-5">
         <div v-if="processEnv" class="a-g-placeholder h-25">G placeholder</div>
-        <div v-else class="a-g-placeholder h-25">Prod G placeholder</div>
+        <MCustomCard
+          v-else
+          card-title="Ja sam profesionalac"
+          card-content="Ukoliko se bavite nekom profesijom a želeli bi da budete prepoznati na našem sajtu, molimo Vas da nas kontaktirate."
+          card-link="/profesije/ja-sam-profesionalac/"
+          card-link-name="Kontakt"
+          card-image="/general/professions.svg"
+          secondary
+        />
+<!--        <div v-else class="a-g-placeholder h-25">-->
+<!--          <TGA/>-->
+<!--        </div>-->
         <MCustomCard
           :card-title="cardPaypal.title"
           :card-subtitle="cardPaypal.subtitle"

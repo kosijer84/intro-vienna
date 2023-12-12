@@ -6,7 +6,7 @@ export const SO_PROFESSION= [
     slug: 'cafe_prestige',
     title: 'Cafe Prestige',
     bgTitle: 'Kafić',
-    teaser: 'Mesto gde možete izaći i provesti ste, jelo, piće, hrana, muzika',
+    teaser: 'Mesto gde možete izaći i provesti se, jelo, piće, hrana, muzika',
     headerImg: 'food-costs-vienna.jpeg',
     companyExternalLink: 'https://restaurantprestige.eatbu.com/',
     proPage: false,
@@ -30,7 +30,7 @@ export const SO_PROFESSION= [
     },
     content: [
       {
-        title: 'Cafe Prestige\n',
+        title: 'Cafe Prestige',
         description: `          
           <p>
             Vehicles of all brands are welcome in our master car workshop!

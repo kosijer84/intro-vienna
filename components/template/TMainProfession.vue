@@ -21,7 +21,10 @@
   </div>
   <p class="mt-3 fw-bold">Ukupno: {{professions?.length}}</p>
   <div class="row row-cols-1 row-cols-md-2 g-3">
-    <div v-for="(profession, index) in professions" :key="index" class="col">
+    <div v-if="!professions?.length" class="col">
+      <p>Trenutno nema korisnika u ovoj kategoriji.</p>
+    </div>
+    <div v-else v-for="(profession, index) in professions" :key="index" class="col">
       <OProfessionCard :profession="profession"/>
     </div>
   </div>

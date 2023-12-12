@@ -11,7 +11,9 @@
     </div>
     <div class="col-md-6">
       <div v-if="processEnv" class="a-g-placeholder">G placeholder</div>
-      <div v-else class="a-g-placeholder">Prod G placeholder</div>
+      <div v-else class="a-g-placeholder">
+        <TGA/>
+      </div>
     </div>
   </div>
   <div class="row">
@@ -99,7 +101,18 @@
     </div>
     <div class="col-md-3">
       <div v-if="processEnv" class="a-g-placeholder">G placeholder</div>
-      <div v-else class="a-g-placeholder">Prod G placeholder</div>
+      <MCustomCard
+        v-else
+        card-title="Ja sam profesionalac"
+        card-content="Ukoliko se bavite nekom profesijom a želeli bi da budete prepoznati na našem sajtu, molimo Vas da nas kontaktirate."
+        card-link="/profesije/ja-sam-profesionalac/"
+        card-link-name="Kontakt"
+        card-image="/general/professions.svg"
+        secondary
+      />
+<!--      <div v-else class="a-g-placeholder">-->
+<!--        <TGA/>-->
+<!--      </div>-->
     </div>
   </div>
   <div class="row">
@@ -224,87 +237,87 @@
   </div>
 </template>
 <script setup lang="ts">
-import {onMounted, ref, reactive} from "#imports"
-import {allStoriesByNewestDate} from '~/helpers/allStoriesHelper'
-import {getOneLatestStory} from "~/helpers/allStoriesHelper";
-import {allTags} from "~/helpers/allStoriesHelper";
-import {JOB_STORY} from "~/constants/blogStories/job";
-import {FLAT_STORY} from "~/constants/blogStories/flat";
-import {SCHOOL_STORY} from "~/constants/blogStories/school";
-import {PAPERS_STORY} from "~/constants/blogStories/papers";
+  import {onMounted, ref, reactive} from "#imports"
+  import {allStoriesByNewestDate} from '~/helpers/allStoriesHelper'
+  import {getOneLatestStory} from "~/helpers/allStoriesHelper";
+  import {allTags} from "~/helpers/allStoriesHelper";
+  import {JOB_STORY} from "~/constants/blogStories/job";
+  import {FLAT_STORY} from "~/constants/blogStories/flat";
+  import {SCHOOL_STORY} from "~/constants/blogStories/school";
+  import {PAPERS_STORY} from "~/constants/blogStories/papers";
 
-const allStories = ref([] as any)
-const allJobStories = ref([] as any)
-const allFlatStories = ref([] as any)
-const allPapersStories = ref([] as any)
-const allSchoolStories = ref([] as any)
-const topicTags = ref([] as any)
-const latestStory = reactive({} as any)
-const router = useRouter()
-const processEnv = ref(false)
-const cardProfessions = reactive({
-  title: 'Profesije',
-  subtitle: 'Možete pronaći naše ljude koji se bave raznim profesijama u Austriji',
-  image: '/general/profession.png',
-  link: '/profesije/',
-  linkName: 'Saznaj više',
-})
-const cardPaypal = reactive({
-  title: 'Podržite nas na paypal-u',
-  subtitle: 'Častite nas pivom ili kafom :)',
-  image: '/general/paypal-support.png',
-  link: '/',
-  linkName: 'Paypal',
-})
+  const allStories = ref([] as any)
+  const allJobStories = ref([] as any)
+  const allFlatStories = ref([] as any)
+  const allPapersStories = ref([] as any)
+  const allSchoolStories = ref([] as any)
+  const topicTags = ref([] as any)
+  const latestStory = reactive({} as any)
+  const router = useRouter()
+  const processEnv = ref(false)
+  const cardProfessions = reactive({
+    title: 'Profesije',
+    subtitle: 'Možete pronaći naše ljude koji se bave raznim profesijama u Austriji',
+    image: '/general/profession.png',
+    link: '/profesije/',
+    linkName: 'Saznaj više',
+  })
+  const cardPaypal = reactive({
+    title: 'Podržite nas na paypal-u',
+    subtitle: 'Častite nas pivom ili kafom :)',
+    image: '/general/paypal-support.png',
+    link: '/',
+    linkName: 'Paypal',
+  })
 
-onMounted(() => {
-  getAllStories()
-  getLatestStory()
-  getAllTags()
-  sortAndAssignStories(JOB_STORY, allJobStories);
-  sortAndAssignStories(PAPERS_STORY, allPapersStories);
-  sortAndAssignStories(FLAT_STORY, allFlatStories);
-  sortAndAssignStories(SCHOOL_STORY, allSchoolStories);
-  checkENV()
-})
+  onMounted(() => {
+    getAllStories()
+    getLatestStory()
+    getAllTags()
+    sortAndAssignStories(JOB_STORY, allJobStories);
+    sortAndAssignStories(PAPERS_STORY, allPapersStories);
+    sortAndAssignStories(FLAT_STORY, allFlatStories);
+    sortAndAssignStories(SCHOOL_STORY, allSchoolStories);
+    checkENV()
+  })
 
-function checkENV() {
-  if(process.env.NODE_ENV === 'development') {
-    processEnv.value = true
+  function checkENV() {
+    if(process.env.NODE_ENV === 'development') {
+      processEnv.value = true
+    }
   }
-}
-function countReadingTime(time: any) {
-  const timeCount = time.reduce((total: any, currentValue: any) => total + currentValue, 0);
-  return timeCount > 1000 ? 6 : 4
-}
-function getAllStories() {
-  const allStoriesByDate = allStoriesByNewestDate()
-  allStories.value = allStoriesByDate.slice(1)
-}
-function getLatestStory() {
-  latestStory.value = getOneLatestStory()
-}
-function sortAndAssignStories(storyType: any, targetArray: { value: any; }) {
-  const stories = storyType;
-  stories.sort((a: { date: number; }, b: { date: number; }) => b.date - a.date);
-  targetArray.value = stories;
-}
-function getAllTags() {
-  topicTags.value = allTags()
-}
-function goToAllStories() {
-  router.push('/prica')
-}
-function goToAllJobs() {
-  router.push('/prica/poslovi')
-}
-function goToAllFlats() {
-  router.push('/prica/stanovi')
-}
-function goToAllPapers() {
-  router.push('/prica/papiri')
-}
-function goToAllSchools() {
-  router.push('/prica/skole')
-}
+  function countReadingTime(time: any) {
+    const timeCount = time.reduce((total: any, currentValue: any) => total + currentValue, 0);
+    return timeCount > 1000 ? 6 : 4
+  }
+  function getAllStories() {
+    const allStoriesByDate = allStoriesByNewestDate()
+    allStories.value = allStoriesByDate.slice(1)
+  }
+  function getLatestStory() {
+    latestStory.value = getOneLatestStory()
+  }
+  function sortAndAssignStories(storyType: any, targetArray: { value: any; }) {
+    const stories = storyType;
+    stories.sort((a: { date: number; }, b: { date: number; }) => b.date - a.date);
+    targetArray.value = stories;
+  }
+  function getAllTags() {
+    topicTags.value = allTags()
+  }
+  function goToAllStories() {
+    router.push('/prica')
+  }
+  function goToAllJobs() {
+    router.push('/prica/poslovi')
+  }
+  function goToAllFlats() {
+    router.push('/prica/stanovi')
+  }
+  function goToAllPapers() {
+    router.push('/prica/papiri')
+  }
+  function goToAllSchools() {
+    router.push('/prica/skole')
+  }
 </script>

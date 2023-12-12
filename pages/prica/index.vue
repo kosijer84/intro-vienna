@@ -6,7 +6,9 @@
     </div>
     <div class="col-md-6 mt-5">
       <div v-if="processEnv" class="a-g-placeholder">G placeholder</div>
-      <div v-else class="a-g-placeholder">Prod G placeholder</div>
+      <div v-else class="a-g-placeholder">
+        <TGA/>
+      </div>
     </div>
   </div>
   <div class="row">

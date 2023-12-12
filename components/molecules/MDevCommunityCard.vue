@@ -20,10 +20,10 @@
   </div>
 </template>
 <script setup lang="ts">
-defineProps({
-  vertical: {
-    type: Boolean,
-    default: false
-  }
-})
+  defineProps({
+    vertical: {
+      type: Boolean,
+      default: false
+    }
+  })
 </script>

@@ -1,4 +1,7 @@
 export default defineNuxtConfig({
+    experimental: {
+        payloadExtraction: true
+    },
     app: {
         head: {
             script: [{

@@ -90,7 +90,9 @@
       <div class="col-md-4">
         <div class="a-sticky-helper">
           <div v-if="processEnv" class="a-g-placeholder h-auto mt-3 mt-md-0">G placeholder</div>
-          <div v-else class="a-g-placeholder h-auto mt-3 mt-md-0">Prod G placeholder</div>
+          <div v-else class="a-g-placeholder h-auto mt-3 mt-md-0">
+            <TGA/>
+          </div>
         </div>
       </div>
     </div>

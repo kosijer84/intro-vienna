@@ -31,7 +31,7 @@ export const CARD_PRICES = [
     items: ['Kartica na stranici', 'Informacije o profesiji', 'Link ka vašem sajtu', 'Stranica kod nas na sajtu', 'Istaknuta kartica', 'Opcija za dodavanje posla', 'Hosting'],
     oneTimePayment: {
       title: 'Jednokratno plaćanje',
-      website: '100 eur za jednu stranicu',
+      website: '200 eur za jednu stranicu',
       pages: '50 eur po dodatnoj stranici',
     },
     options: ['Kontaktirajte nas'],
