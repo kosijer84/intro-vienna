@@ -1,5 +1,46 @@
 export const GENERAL_STORY = [
   {
+    id: 'mtel_u_becu_mobilni_operater',
+    tag: 'uopsteno',
+    slug: 'mtel_u_becu_mobilni_operater',
+    title: 'Kako izabrati mobilnog operatera u Beču',
+    bgTitle: 'Telefon',
+    teaser: 'U Austriji postoji operater MTel koji je članica Telekom Srbija grupacije koji je naravno tu zbog velike zajednice',
+    headerImg: 'mtel-austria-bec.webp',
+    relatedStory: '',
+    content: [
+      {
+        title: 'Mobilni operater',
+        description: `          
+          <p>
+            U Austriji naravno postoji mnogo mobilnih operatera ali ukoliko želite da ostanete u kontaktu sa svojima u Srbiji možete da sklopite ugovor sa
+            <b>MTEL Austria</b> koji je deo grupacije Telekom Srbija.
+          </p>
+          <p>
+            Mana ovog operatera je ta što imate besplatne minute u Srbiji samo sa korisnicima koji su u Telekom Srbija grupi. <br>
+            Minute i mobilne podatke kako koristite u Austriji tako koristite i u Srbiji. To je interesantna stvar jer možete da koristite samo jednu karticu ukoliko često putujete.
+          </p>`,
+      },
+      {
+        title: 'Kako do broja',
+        description: `          
+          <p>
+            Pronađete najbližu poslovnicu, ne treba zakazivanje termina, odete u poslovnicu i <b>naravno da se priča jezik sa naših prostora</b>, 
+            ostavite svoj račun sa koga će vam skidati pare za mesečni račun, adresa ukoliko to ne želite i to je to.
+          </p>
+          <p>Obično je gužva velika, tako da se čeka u redu ali sama procedura sklapanja ugovora je dosta jednostavna i traje oko 10-15min.</p>
+          <p><b>Savet</b> - postavite limit za sve što možete da se ne desi slučajno da vam dođe račun od <b>par hiljada evra</b> i to zahtevajte od službenice odmah da vam uradi.</p>
+          <p>TV po želji, ko želi u paketu, nama nije trebao.</p>
+          <p>Službenice se profesionalne i ljubazne a link do operatera možete videti na ovom linku <a href="https://mtel.at/sr" target="_blank">mtel.at/sr</a></p>`,
+      },
+    ],
+    date: new Date('2023-12-17').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
     id: 'bozicni_vasari_u_becu',
     tag: 'uopsteno',
     slug: 'bozicni_vasari_u_becu',
