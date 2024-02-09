@@ -107,9 +107,7 @@
         </div>
       </div>
       <div class="col-md-4 col-lg-3 mt-5">
-        <div v-if="processEnv" class="a-g-placeholder h-25">G placeholder</div>
         <MCustomCard
-          v-else
           card-title="Ja sam profesionalac"
           card-content="Ukoliko se bavite nekom profesijom a želeli bi da budete prepoznati na našem sajtu, molimo Vas da nas kontaktirate."
           card-link="/profesije/ja-sam-profesionalac/"
@@ -117,15 +115,12 @@
           card-image="/general/professions.svg"
           secondary
         />
-<!--        <div v-else class="a-g-placeholder h-25">-->
-<!--          <TGA/>-->
-<!--        </div>-->
         <MCustomCard
           :card-title="cardPaypal.title"
           :card-subtitle="cardPaypal.subtitle"
           :card-image="cardPaypal.image"
-          :card-link="cardPaypal.link"
-          :card-link-name="cardPaypal.linkName"
+          :external-link="cardPaypal.link"
+          :external-link-name="cardPaypal.linkName"
           class="m-paypal-support-card mt-3"
         />
       </div>
@@ -156,11 +151,11 @@ import {onMounted, reactive, ref} from "#imports";
     professionCard: '' as any
   })
   const cardPaypal = reactive({
-    title: 'Podržite nas na paypal-u',
-    subtitle: 'Častite nas pivom ili kafom :)',
+    title: 'Pametni.rs',
+    subtitle: 'Sve o pametnim uređajima',
     image: '/general/paypal-support.png',
-    link: '/',
-    linkName: 'Paypal',
+    link: 'https://pametni.rs/',
+    linkName: 'Saznaj Više',
   })
 
   const processEnv = ref(false)

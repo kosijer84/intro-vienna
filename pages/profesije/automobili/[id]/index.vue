@@ -87,14 +87,6 @@
           </div>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="a-sticky-helper">
-          <div v-if="processEnv" class="a-g-placeholder h-auto mt-3 mt-md-0">G placeholder</div>
-          <div v-else class="a-g-placeholder h-auto mt-3 mt-md-0">
-            <TGA/>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="row mt-5">
       <div class="col-md-9">
@@ -105,8 +97,8 @@
           :card-title="cardPaypal.title"
           :card-subtitle="cardPaypal.subtitle"
           :card-image="cardPaypal.image"
-          :card-link="cardPaypal.link"
-          :card-link-name="cardPaypal.linkName"
+          :external-link="cardPaypal.link"
+          :external-link-name="cardPaypal.linkName"
           h100
           class="m-paypal-support-card mt-3 mt-md-0"
         />
@@ -127,11 +119,11 @@
   const route = useRoute()
   const processEnv = ref(false)
   const cardPaypal = reactive({
-    title: 'Podržite nas na paypal-u',
-    subtitle: 'Častite nas pivom ili kafom :)',
+    title: 'Pametni.rs',
+    subtitle: 'Sve o pametnim uređajima',
     image: '/general/paypal-support.png',
-    link: '/',
-    linkName: 'Paypal',
+    link: 'https://pametni.rs/',
+    linkName: 'Saznaj Više',
   })
 
   onMounted(() => {

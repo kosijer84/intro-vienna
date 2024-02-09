@@ -1,5 +1,41 @@
 export const JOB_STORY = [
   {
+    id: 'godisnji_odmor',
+    tag: 'poslovi',
+    slug: 'godisnji_odmor',
+    title: 'Godišnji odmor u Austriji',
+    bgTitle: 'Dani',
+    teaser: 'Nakon godinu dana u kompaniji, koliko dana godišnjeg odmora mi pripada',
+    headerImg: 'drei.webp',
+    relatedStory: 'posao_u_becu',
+    content: [
+      {
+        title: 'Nova godina, novi dani godišnjeg odmora :)',
+        description: `          
+          <p>
+            Moram da napomenem da radim u kompaniji Drei, ne znam da li je za sve kompanije važi isto pravilo u Austriji ali pretpostavljam da ne odstupaju mnogo od ovoga.
+          </p>
+           <p>
+            Za ovu godinu sam dobio na korišćenje <b>26 dana</b> godišnjeg odmora plus državni praznici kojih ima <b>13</b> ove godine koji padaju na radni dan. <br>
+          </p>
+          <p>U trenutnoj godini moram iskoristiti većinu, mislim da je pravilo da samo 5 dana mogu preneti u sledeću godinu.</p>
+          <p>Takođe, interesantna stvar je da mogu da uzmem godišnji odmor u nizu od <b>3 nedelje</b>.</p>`,
+      },
+      {
+        title: 'Još jedno pravilo',
+        description: `
+        <p>Sve dane godišnjeg odmora moram isplanirati, tj odabrati najkasnije do 30. marta. Što znači da moram već sada znati kuda ću i gde ću skoro za celu godinu.</p>
+        <p>Postoji neka tolerancija da možeš da menjaš dane ukoliko nešto iskrsne ali mislim da se ne nailazi na odobravanje ovoga u svakoj kompaniji, tako da mora dobro da se planira :), ukoliko je to uopšte izvodljivo.</p>
+        `
+      }
+    ],
+    date: new Date('2024-02-07').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
     id: 'posao_u_becu',
     tag: 'poslovi',
     slug: 'posao_u_becu',

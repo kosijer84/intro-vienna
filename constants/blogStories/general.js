@@ -1,5 +1,218 @@
 export const GENERAL_STORY = [
   {
+    id: 'prvi_rodjendan_u_becu',
+    tag: 'uopsteno',
+    slug: 'prvi_rodjendan_u_becu',
+    title: 'Igraonica, prvi rođendan u Beču',
+    bgTitle: 'Klinci',
+    teaser: 'Prvi rođendan u Beču, rezervacija igraonice, poređenje cena u odnosu na Novi Sad',
+    headerImg: 'birthday-party.webp',
+    relatedStory: '',
+    content: [
+      {
+        title: 'Igraonica',
+        description: `          
+          <p>
+            Najbliža igraonica koju smo pronašli da je iole blizu nas je <a href="https://www.fun4kids.at/" target="_blank" class="fw-bold text-decoration-none">fun4kids</a>.
+          </p>
+          <p>Sam sadržaj u igraonici je manje-više isti kao i u Srbiji, najviše podseća na Starlija na Novom Naselju, 
+          međutim razliku pravi samo osoblje u igraonici.
+          </p>
+          <p>Ovde se svodi na to da roditelj brine o detetu u igraonici, osoblje je tu samo da naplati i primi porudžbinu. <br>
+          Ovo možda nije običaj za sve igraonice ali ovde je definitivno bilo pravilo.
+          </p> 
+          <p>Parkinga ima na pretek i ne plaća se, <b>konačno</b>.</p>`,
+      },
+      {
+        title: 'Cena igraonice',
+        description: `          
+          <p>
+            Cena na 06.02.2024. iznosi <b>50eur</b> depozita i još <b>103eur</b> na kraju rođendana plus piće za roditelje.
+          </p>
+          <h5 class="mt-2">
+            Šta se dobija za ovaj novac?
+          </h5>
+          <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Igraonica za ceo dan</div>
+                Ovo je bitno zato što u NS dobijete igranicu samo na 2h.
+              </div>
+              <span class="badge bg-primary rounded-pill">Uračunato</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Hrana i piće</div>
+                Možete da izaberete između nagetsa i pomfrita, ribljih štapića, pice i sok za svako dete ponaosob. 
+                Takođe birate kada deca da jedu da sve bude toplo.
+              </div>
+              <span class="badge bg-primary rounded-pill">Uračunato</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Soba za slavljenika</div>
+                Ovo se dodatno naplaćuje.
+              </div>
+              <span class="badge bg-primary rounded-pill">50eur</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+              <div class="ms-2 me-auto">
+                <div class="fw-bold">Slani ili slatki paket</div>
+                Ovo se dodatno naplaćuje.
+              </div>
+              <span class="badge bg-primary rounded-pill">25eur</span>
+            </li>
+          </ol>
+          `,
+      },
+      {
+        title: 'Zaključak',
+        description: `          
+          <p>
+            Ne sviđa mi se deo gde sve sam radiš, bukvalno kao da smo pod šatorom. Kada god neko od prijatelja dođe trčiš do šanka da ugostiš čoveka i svaki put se cimaš i plaćaš odmah račun - niđe veze.
+          </p>
+          <p>
+            Dođi, ostavi pare i idi. 
+          </p>
+          <p>Za klince je super zato što je sadržaj možda malo bogatiji, postoji i mali karting sa stazom :)</p>
+          <p>Cena je manje više ista ali dobije se <b>mnogo</b> bolja usluga u Novom Sadu. Ukoliko prnađemo neku igraonicu da je bolja, pišemo ovde :).</p>`,
+      },
+    ],
+    date: new Date('2024-02-06').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
+    id: 'hitna_pomoc_prvi_susret',
+    tag: 'uopsteno',
+    slug: 'hitna_pomoc_prvi_susret',
+    title: 'Hitna pomoć - šetalište',
+    bgTitle: 'Lekar',
+    teaser: 'Prvi susret sa hitnom pomoći u Beču.',
+    headerImg: 'ambulance.webp',
+    relatedStory: '',
+    content: [
+      {
+        title: 'Hitna pomoć - trotinet na šetalištu',
+        description: `          
+          <p>
+            Glavno šetalište u našem okrugu, letnje poslepodne, ništa ne sluti na to da može da se desi nešto loše.
+          </p>
+          <p>
+            Klinac kada je izašao na šetalište iz radnje, devojka sa električnim trotinetom je naletela punom brzinom i udarila dete. <br>
+            <b>Krvi iz nosa, oderotina na laktu i rebrima, plač.</b>
+          </p>
+          <p>U jednom momentu haos, ne znaš gde se nalaziš. Devojka što je udarila dete priča na nemačkom i optužuje nas kako je dete skočilo na trotinet. WTF???</p>`,
+      },
+      {
+        title: 'Čekanje policije i hitne pomoći',
+        description: `          
+          <p>
+            Naravno da je neko zvao policiju i hitnu pomoć, posebno što je dete u pitanju. Čekanje je delovalo kao večnost pošto nismo znali da li je nos slomljen.
+          </p>
+          <p>
+            Pri dolasku hitne i policije, davali smo izjave, mi na engleskom, devojka svoju verziju na nemačkom, duvanje u dreger i devojka i dete od 7g (majko mila). <br>
+            Nakon ovoga supruga odlazi u hitnu pomoć sa vozilom da se sve snimi da se potvrdi da ništa nije slomljeno.
+          </p>
+          <p>Duboko u noć smo ostali u bolnici dok se sve nije sredilo, popunili izveštaji. <b>Na sreću ništa nije slomljeno, sve je prošlo ok.</b></p>
+          `,
+      },
+      {
+        title: 'Pismo od policije',
+        description: `          
+          <p>
+            Čekali smo jedno nedelju dana na pismo od policije gde smo bili obavezani da dođemo u stanicu da damo još jednu izjavu i da odlučimo da li ćemo tužiti devojku.
+          </p>
+          <p>
+            Odustali smo od tužbe tako da se sve svelo na tužioca koji je kasnije doneo odluku da kazni devojku sa 180eur kazne delo koje je uradila. <br>
+            Tu se sve završava. Na sreću.
+          </p>
+          <p>Inače, kazna za vožnju bilo čega kroz pešačku zonu iznosi <b>30eur</b>. Naravno da većina ovo ne poštuje.</p>`,
+      },
+    ],
+    date: new Date('2024-01-22').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
+    id: 'mtel_u_becu_mobilni_operater_tv',
+    tag: 'uopsteno',
+    slug: 'mtel_u_becu_mobilni_operater_tv',
+    title: 'MTEL - isključivanje TV-a u sklopu paketa',
+    bgTitle: 'TV',
+    teaser: '3 meseca, automatsko uključivanje pretplate na tv.',
+    headerImg: 'mtel-austria-bec.webp',
+    relatedStory: 'mtel_u_becu_mobilni_operater',
+    content: [
+      {
+        title: 'Mobilni operater / tv pretplata',
+        description: `          
+          <p>
+            Tri meseca su prošla nakon potpisivanja ugovora sa MTEL-om i automatski je došao račun uvećan za 5eur.
+            U račun je uračunata stavka TV-a koji nismo ni želeli niti nam treba. Ne može odmah na početku da se deaktivira, mora biti aktivirano pa
+             onda vi nakon 3 meseca ne smete da zaboravite da odjavite to čudo.
+          </p>
+          <p>
+            Ono što je pozitivno, podrška može da se odabere na srpskom ali kao i u Srbiji čekanje se odužilo na 20 minuta. <br>
+            Treba biti uporan i odjaviti TV. <br>
+          </p>
+          <p>
+            Nadam se iskreno da će sledeći račun biti umanjen za <b>5eur.</b>
+          </p>`,
+      },
+    ],
+    date: new Date('2024-01-17').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
+    id: 'amazon_kupovina_u_becu',
+    tag: 'uopsteno',
+    slug: 'amazon_kupovina_u_becu',
+    title: 'Kupovina preko Amazona',
+    bgTitle: 'Amazon',
+    teaser: 'Odlučio sam se da prvi put kupim nešto preko Amazona pa sam rešio da podelim i to iskustvo',
+    headerImg: 'amazon.webp',
+    relatedStory: '',
+    content: [
+      {
+        title: 'Amazon - prvi susret',
+        description: `          
+          <p>
+            Nisam imao prilike u Srbiji da poručujem bilo šta preko Amazona, <br>
+            jedino iskustvo sa inostranstvom je bio AliExpress međutim nakon nekog vremena porudžbine su prestale da stižu <br>
+            tako da sam odustao. 
+          </p>
+          <p>
+            Prva porudžbina je odrađena, bilo je i više nego jednostavno, poručena roba je stigla čak ranije od predviđenog datuma.
+          </p>`,
+      },
+      {
+        title: 'Pogrešna adresa',
+        description: `          
+          <p>
+            Nažalost ostavio sam pogrešnu adresu na koju mi je isporuka trebala stići a dostavljači sa Amazona nemaju baš običaj da zovu kada su ispred zgrade :) tako da je paket završio u drugoj zgradi.
+          </p>
+          <p>Ono što oni urade, ostave ti paket pored vrata, uslikaju da su ga ostavili tu i pošalju tu sliku da je isporučeno.</p>
+          <p><b>Šta se meni desilo?</b> Ljudi su ostavili u drugom ulazu paket i poslali mi poruku da je komšija preuzeo paket. <br>
+          Interesantne stvari su mi prolazile kroz glavu jer naravno dolazim iz Srbije.</p>
+          <p>Naravno otišao sam kod komšije, komšija otvorio vrata i ljubazno mi dao isporučeni paket. Ja sam se zahvalio naravno a on kaže i drugi put.</p>
+          <p>Ja sam iskreno mislio da mogu da se oprostim od paketa, međutim izgleda da je ovde normalno da neko čitaj potpuni stranac preuzme paket umesto tebe i kasnije ti isporuči.</p>`,
+      },
+    ],
+    date: new Date('2023-12-21').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
     id: 'mtel_u_becu_mobilni_operater',
     tag: 'uopsteno',
     slug: 'mtel_u_becu_mobilni_operater',

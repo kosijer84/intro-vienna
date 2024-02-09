@@ -61,7 +61,7 @@
     description: () => story.value?.teaser,
     ogTitle: () => story.value?.title,
     ogDescription: () => story.value?.teaser,
-    ogImage: () => `https://wien-86d0f.web.app/stories/${story.value?.headerImg}`,
-    ogUrl: () => `https://wien-86d0f.web.app/prica/poslovi/${story.value?.slug}`
+    ogImage: () => `https://odlazakuaustriju.com/stories/${story.value?.headerImg}`,
+    ogUrl: () => `https://odlazakuaustriju.com/prica/poslovi/${story.value?.slug}`
   });
 </script>

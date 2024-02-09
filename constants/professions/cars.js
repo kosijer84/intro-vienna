@@ -6,7 +6,7 @@ export const CARS_PROFESSION= [
     slug: 'grujic',
     title: 'Auto service Grujić',
     bgTitle: 'Servis',
-    teaser: 'We have been your reliable and competent partner for all questions relating to automobiles for 15 years.',
+    teaser: 'Već 15 godina smo vaš pouzdan i kompetentan partner za sve što se tiče automobila.',
     headerImg: 'cars-general.jpeg',
     companyExternalLink: 'https://www.auto-service.co.at/',
     proPage: false,
@@ -53,7 +53,7 @@ export const CARS_PROFESSION= [
     slug: 'vd_automotive',
     title: 'VD Automehaničar',
     bgTitle: 'Servis',
-    teaser: 'Master car company - your specialist for all brands Master car company - your specialist for all brands Master car company - your specialist for all brands',
+    teaser: 'Master car company - vaš stručnjak za sve brendove automobila.',
     headerImg: 'cars-general.jpeg',
     companyExternalLink: 'https://www.vdautomotive.at/Startseite/',
     proPage: true,
@@ -81,11 +81,7 @@ export const CARS_PROFESSION= [
         title: 'Osnivanje',
         description: `          
           <p>
-            Vehicles of all brands are welcome in our master car workshop!
-            Each vehicle is cared for, repaired and maintained according to manufacturer specifications - of course with the latest 
-            diagnostic systems and - depending on the customer's wishes - either using original equipment manufacturer/original spare 
-            parts or cheaper replica spare parts. Personal service, short distances and professional, cross-brand expertise characterize our 
-            car repair shop throughout Austria.
+          Davne 2015. godine, grupa strastvenih ljubitelja automobila okupila se kako bi ostvarila svoj san - osnivanje Master Car Company. Ova ekipa entuzijasta delila je ljubav prema različitim brendovima automobila i želela je stvoriti prostor gde će ljubitelji automobila moći da pronađu sve što im je potrebno na jednom mestu.
           </p>`,
       },
       {
@@ -97,11 +93,7 @@ export const CARS_PROFESSION= [
         title: 'Čime se bavimo',
         description: `          
           <p>
-            Vehicles of all brands are welcome in our master car workshop!
-            Each vehicle is cared for, repaired and maintained according to manufacturer specifications - of course with the latest 
-            diagnostic systems and - depending on the customer's wishes - either using original equipment manufacturer/original spare 
-            parts or cheaper replica spare parts. Personal service, short distances and professional, cross-brand expertise characterize our 
-            car repair shop throughout Austria.
+             Master car company je vaš pouzdani stručnjak za sve brendove automobila. Naša posvećena ekipa stručnjaka je tu da vam pruži vrhunsku uslugu i podršku, nezavisno od toga koji brend vozila posedujete. Bez obzira da li vam je potrebno redovno održavanje, popravka ili savet u vezi sa vašim automobilom, možete računati na nas da vam pružimo najbolju moguću podršku. Vaša sigurnost i zadovoljstvo su naš prioritet, a Master car company je tu da ispuni sve vaše potrebe u vezi sa automobilima.
           </p>`,
       }
     ],
@@ -148,10 +140,10 @@ export const CARS_PROFESSION= [
     slug: 'bozo',
     title: 'KFZ Bozo',
     bgTitle: 'Servis',
-    teaser: 'We will provide you with proof that quality does not always have to be expensive. We are confident that after your first visit to the workshop, we will be able to welcome you as a regular customer.\n',
+    teaser: 'Pružićemo vam dokaze da kvalitet ne mora uvek biti skup. Posle prvog posete radionici, verujemo da ćete postati naš redovan klijent.',
     headerImg: 'cars-general.jpeg',
     companyExternalLink: 'http://www.kfz-bozo.at/',
-    proPage: false,
+    proPage: true,
     promo: false,
     date: new Date('2023-10-12').getTime(),
     workshopPlace: {
@@ -173,14 +165,10 @@ export const CARS_PROFESSION= [
     },
     content: [
       {
-        title: 'V&D Automotive',
+        title: 'KFZ Bozo',
         description: `          
           <p>
-            Vehicles of all brands are welcome in our master car workshop!
-            Each vehicle is cared for, repaired and maintained according to manufacturer specifications - of course with the latest 
-            diagnostic systems and - depending on the customer's wishes - either using original equipment manufacturer/original spare 
-            parts or cheaper replica spare parts. Personal service, short distances and professional, cross-brand expertise characterize our 
-            car repair shop throughout Austria.
+Sva vozila svih brendova su dobrodošla u našu master auto radionicu! Svako vozilo se održava, popravlja i servisira prema specifikacijama proizvođača - naravno, uz korišćenje najnovijih dijagnostičkih sistema i - prema želji kupca - korišćenjem originalnih rezervnih delova proizvođača ili jeftinijih zamenskih delova. Lična usluga, kratki putni pravci i stručnost prepoznatljiva širom Austrije karakterišu našu auto radionicu.
           </p>`,
       }
     ],
@@ -194,7 +182,7 @@ export const CARS_PROFESSION= [
     slug: 'autoreifencenter',
     title: 'Autoreifencenter Željko Veselinović',
     bgTitle: 'Servis',
-    teaser: 'We will provide you with proof that quality does not always have to be expensive. We are confident that after your first visit to the workshop, we will be able to welcome you as a regular customer.\n',
+    teaser: 'Profesionalna odmah dostupna usluga bez prethodne najave.',
     headerImg: 'cars-general.jpeg',
     companyExternalLink: 'http://autoreifencenter.biz/',
     proPage: false,

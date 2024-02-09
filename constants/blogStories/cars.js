@@ -1,5 +1,90 @@
 export const CARS_STORY = [
   {
+    id: 'lekarski_pregled_za_zamenu_vozacke',
+    tag: 'automobili',
+    slug: 'lekarski_pregled_za_zamenu_vozacke',
+    title: 'Lekarski pregled zbog zamene vozačke',
+    bgTitle: 'Vozačka',
+    teaser: 'Kako izabrati lekara, gde obaviti pregled, da li je obavezan.',
+    headerImg: 'doctor-eye.webp',
+    relatedStory: 'zamena_vozacke',
+    content: [
+      {
+        title: 'Da li je pregled obavezan?',
+        description: `     
+          <p>
+            <b>Jeste</b>, pregled je obavezan. Ne tako davno ko ima vozačku dozvolu morao je da polaže testove i vožnju u skraćenoj verziji. <br>
+            Danas, ne moramo više to da radimo ali opet postoji malo više prepreka u odnosu na nprimer na Hrvatsku.
+          </p>
+          <p>Ono što sam morao da uradim, jeste da odradim lekarski pregled koji je obavezan preduslov za podnošenje zahteva za zamenu vozačke dozvole.</p>`,
+      },
+      {
+        title: 'Gde odraditi lekarski pregled?',
+        description: `          
+          <p>
+            Na sajtu policijske uprave možete pronaći listu autorizovanih lekara koji mogu da urade pregled. <br>
+            Na ovom <a href="https://www.polizei.gv.at/wien/buergerservice/fuehrerschein/0/die_aerztliche_untersuchung.aspx" target="_blank" class="fw-bold text-decoration-none">linku </a> možete pronaći spisak.
+          </p>`,
+      },
+      {
+        title: 'Cena i pregled',
+        description: `          
+          <p>
+          U ovom tekstu nećemo favorizovati nekog lekara :) jer na spisku gore ima naravno jako puno lekara sa našeg područja pa možete da izaberete koji vam je najbliži po mestu boravka. <br>
+          Sam pregled nije ništa specijalno, merenje pritiska i očni pregled. Veći je problem što se dugo čeka iako sam imao zakazano jer je generalno velika gužva.
+          Cena za pregled je <b>35eur</b>.
+          </p>`,
+      },
+    ],
+    date: new Date('2024-02-03').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
+    id: 'godisnja_vinjeta',
+    tag: 'automobili',
+    slug: 'godisnja_vinjeta',
+    title: 'Godišnja vinjeta',
+    bgTitle: 'Vinjeta',
+    teaser: 'Kako do godišnje vinjete, do kada je validna, gde kupiti.',
+    headerImg: 'annual_vignette.webp',
+    relatedStory: 'nove_cene_vinjete',
+    content: [
+      {
+        title: 'Vinjeta kao nalepnica',
+        description: `     
+          <p>
+            Fizičke vinjete mogu se dobiti od austrijskih automobilskih klubova, kao i na poštama, kioscima i benzinskim pumpama. Takođe, vinjete možete kupiti i u susednim zemljama Austrije, na benzinskim pumpama, granicama i automobilskim klubovima. 
+            Automobili iznajmljeni u susednim zemljama mogu ili ne moraju biti opremljeni vinjetom. Molimo vas da je nabavite od agencije za iznajmljivanje automobila. <br>
+            Obavezno postavite vinjetu na unutrašnju stranu vetrobranskog stakla vašeg vozila prilikom ulaska u Austriju.
+          </p>`,
+      },
+      {
+        title: 'Digitalna vinjeta',
+        description: `          
+          <p>
+            Kupovina putem interneta na svom uređaju
+            Posetite ASFINAG online prodavnicu ili preuzmite ASFINAG aplikaciju "Unterwegs" na svoj telefon. <br>
+            Imajte na umu da digitalna vinjeta nije odmah važeća nakon online kupovine. Zbog propisa o potrošačkim pravima, vinjeta je važeća najranije od 18. dana nakon online kupovine.
+          </p>`,
+      },
+      {
+        title: 'Cena',
+        description: `          
+          <p>
+          Cena godišnje vinjete za 2024. godinu je <b>96.40eur</b> 
+          </p>`,
+      },
+    ],
+    date: new Date('2024-01-05').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
     id: 'voznja_bez_vinjete',
     tag: 'automobili',
     slug: 'voznja_bez_vinjete',

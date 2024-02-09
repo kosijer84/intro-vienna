@@ -1,22 +1,25 @@
 <template>
   <div class="row mb-4">
-    <div class="col-md-6 mt-5">
-      <MHeadline title="Popularne teme" title-bold title-size="h3"/>
-      <MPopularTopics :tags="topicTags as any"/>
-    </div>
-    <div class="col-md-6 mt-5">
-      <div v-if="processEnv" class="a-g-placeholder">G placeholder</div>
-      <div v-else class="a-g-placeholder">
-        <TGA/>
+    <div class="col-md-12 my-5">
+      <div class="row row-cols-1 row-cols-md-2">
+        <MHeadline title="Popularne teme" :subtitle="`Trenutno ima ${allStories.length}`" title-bold title-size="h3" class="col"/>
+        <BInput
+          label="Pronađite priču po naslovu"
+          placeholder="Vrste parkinga u Beču"
+          :label-bellow="`Pronađene ${filteredStories.length} priče`"
+          class="col"
+          v-model="searchStory"
+        />
       </div>
+      <MPopularTopics tags-title="Filter po temi" :tags="topicTags as any" class="mt-3"/>
     </div>
   </div>
   <div class="row">
     <div class="col-md-6 col-lg-8">
       <div class="row row-cols-1 row-cols-xl-3 row-cols-xxl-3 g-4">
         <div
-          v-if="allStories.length"
-          v-for="(story, index) in allStories"
+          v-if="filteredStories.length"
+          v-for="(story, index) in filteredStories"
           :key="index"
           class="col"
         >
@@ -48,6 +51,10 @@
   const allStories = ref([] as any)
   const topicTags = ref([] as any)
   const processEnv = ref(false)
+  const searchStory = ref('');
+  const filteredStories = computed(() => {
+    return allStories.value.filter((story: { title: string; }) => story.title.toLowerCase().includes(searchStory.value.toLowerCase()));
+  });
 
   onMounted(() => {
     getAllStories()

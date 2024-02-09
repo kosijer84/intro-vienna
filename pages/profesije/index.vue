@@ -35,10 +35,6 @@
         </div>
       </div>
       <div class="col-md-6 col-xl-4 mt-3 mt-md-0">
-        <div v-if="processEnv" class="a-g-placeholder h-auto">G placeholder</div>
-        <div v-else class="a-g-placeholder h-auto">
-          <TGA/>
-        </div>
         <MCustomCard
           card-title="Ja sam profesionalac"
           card-content="Ukoliko se bavite nekom profesijom a želeli bi da budete prepoznati na našem sajtu, molimo Vas da nas kontaktirate."
@@ -46,7 +42,7 @@
           card-link-name="Kontakt"
           card-image="/general/professions.svg"
           secondary
-          class="my-4"
+          class="mb-4"
         />
         <OLastTopicsCard :stories="allStories.slice(0,3)" stacked/>
       </div>

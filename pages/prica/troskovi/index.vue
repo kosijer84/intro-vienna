@@ -35,8 +35,8 @@
             :card-title="cardPaypal.title"
             :card-subtitle="cardPaypal.subtitle"
             :card-image="cardPaypal.image"
-            :card-link="cardPaypal.link"
-            :card-link-name="cardPaypal.linkName"
+            :external-link="cardPaypal.link"
+            :external-link-name="cardPaypal.linkName"
             class="m-paypal-support-card"
           />
         </div>
@@ -56,11 +56,11 @@ import {COST_STORY} from "~/constants/blogStories/costs";
 const allCostStories = ref([] as any)
 const topicTags = ref([] as any)
 const cardPaypal = reactive({
-  title: 'Podržite nas na paypal-u',
-  subtitle: 'Častite nas pivom ili kafom :)',
+  title: 'Pametni.rs',
+  subtitle: 'Sve o pametnim uređajima',
   image: '/general/paypal-support.png',
-  link: '/',
-  linkName: 'Paypal',
+  link: 'https://pametni.rs/',
+  linkName: 'Saznaj Više',
 })
 
 onMounted(() => {

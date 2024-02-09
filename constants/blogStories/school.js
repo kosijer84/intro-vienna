@@ -1,5 +1,55 @@
 export const SCHOOL_STORY = [
   {
+    id: 'prvi_semestar_gotov',
+    tag: 'skole',
+    slug: 'prvi_semestar_gotov',
+    title: 'Kraj prvog semestra',
+    bgTitle: 'Škola',
+    teaser: 'Završio se prvi semestar tj prvo polugodište, iskustvo dece i nas roditelja.',
+    headerImg: 'school-end.webp',
+    relatedStory: 'mesecni_troskovi_skola',
+    content: [
+      {
+        title: 'Prvi semestar - kraj',
+        description: `          
+          <p>
+            Obzirom da klinci nisu znali nemački, <b>prvi</b> i <b>treći</b> razred, prvi semestar nije bio ocenjen. <br>
+            Klinci su se uspešno prilagodili, obzirom da na okolnosti koje su bile oko nas, zatvaranje škole, neizvesnost, odlazak druge dece...
+          </p>`,
+      },
+      {
+        title: 'Nova pravila od 2024. godine',
+        description: `
+          <p>
+           Pravilo je do ove školske godine je bilo da deca koja ne znaju nemački imaju pravo da slušaju nastavu celu školsku godinu i na kraju godine,
+            <b>u junu</b>, polažu nemački jezik.
+          </p>
+          <p>Još jedna novost je da <b>prvi razred</b> dobija ocene od ove godine.</p>
+          <p>
+            Promena koja se desila, naravno na našu štetu, jeste ta da su deca morala da polažu nemački na kraju <b>prvog semestra</b>. <br>
+            Ukoliko klinci ne polože test, znači da ponavljaju razred a drugi semestar ukoliko padnu se bukvalno igraju, ne učestvuju aktivno u nastavi. <br>
+            <b>Ovo je ravno katastrofi</b> i za dete i za roditelja.            
+          </p>`
+      },
+      {
+        title: 'Privatni časovi i test',
+        description: `
+          <p>
+           Da bismo uspešno koliko toliko savladali nemački i bili spremni za test morali smo da uzmemo privatne časove i pored toga još kući dopunjavati sa učenjem.
+          </p>
+          <p>
+            Zahvaljujući upornosti i uz malo sreće klinci su <b>uspešno</b> položili test. <br>
+            Borba naravno nije završena, drugi semestar će biti ocenjeni tako da sada kreće nastavak borbe za dobre ocene da bi se mogao steći preduslov za upis u gimnaziju.
+          </p>`
+      },
+    ],
+    date: new Date('2024-02-01').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
     id: 'skola_u_becu',
     tag: 'skole',
     slug: 'skola_u_becu',

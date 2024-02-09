@@ -9,16 +9,32 @@
         />
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <h2 class="mt-5">Čekajući...</h2>
-        <p>Dok ne smislimo kako da se okupimo i koja će biti naša svrha pročitajte moju priču kako sam došao u Austriju ako vas ne mrzi :)</p>
-        <p class="mb-5">Molim vas da me kontaktirate ukoliko imate neke ideje na
-          <a href="mailto:danijel.kosijer@gmail.com" class="fw-bold text-decoration-none">Email</a>.
-        </p>
+    <div class="row mt-5 mb-3">
+      <div class="col">
+        <h1>DEV događaji u Austriji.</h1>
       </div>
     </div>
     <div class="row">
+      <div class="col-md-6">
+        <div class="bg-white p-3 h-100" style="border-radius: 5px">
+          <h2>We are developers</h2>
+          <p class="fw-bold">Europe’s #1 Developer Community</p>
+          <p class="mb-5">Na jednom mestu svi događaji u Beču, sve vezano za development, kontakti, kompanije i poslovi.
+            <a href="https://www.wearedevelopers.com/" class="fw-bold text-decoration-none" target="_blank">Više na linku</a>.
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="bg-white p-3 h-100" style="border-radius: 5px">
+          <h2>Meetup.com</h2>
+          <p class="fw-bold">Svi meetup-i na jednom mestu</p>
+          <p class="mb-5">Pored ostalih događaja u svetu, ovde možete videti događaje koji se u nekom narednom periodu organizuju u Beču.
+            <a href="https://www.meetup.com/vienna-game-dev-meetup/" class="fw-bold text-decoration-none" target="_blank">Više na linku</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5">
       <div class="col-lg-9">
         <OLastTopicsCard :stories="allStories.slice(0,6)"/>
       </div>
@@ -51,7 +67,7 @@
   const allStories = ref([] as any)
   const devHeaderContent = reactive({
     title: 'Zajednica developera u Austriji',
-    subtitle: 'Ova ideja je još u izradi i ako imate ideju za saradnju, molim vas da me kontakirate :)',
+    subtitle: 'Za dodatne informacije molim vas da me kontakirate :)',
     image: '/profession.png',
   })
   const cardProfessions = reactive({
