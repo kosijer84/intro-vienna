@@ -53,7 +53,7 @@ export const CARS_PROFESSION= [
     slug: 'vd_automotive',
     title: 'VD Automehaničar',
     bgTitle: 'Servis',
-    teaser: 'Master car company - vaš stručnjak za sve brendove automobila.',
+    teaser: 'Zajedno imamo preko 30 godina iskustva. Imajte koristi od toga!',
     headerImg: 'cars-general.jpeg',
     companyExternalLink: 'https://www.vdautomotive.at/Startseite/',
     proPage: true,
@@ -78,46 +78,50 @@ export const CARS_PROFESSION= [
     },
     content: [
       {
-        title: 'Osnivanje',
+        title: 'O nama',
         description: `          
           <p>
-          Davne 2015. godine, grupa strastvenih ljubitelja automobila okupila se kako bi ostvarila svoj san - osnivanje Master Car Company. Ova ekipa entuzijasta delila je ljubav prema različitim brendovima automobila i želela je stvoriti prostor gde će ljubitelji automobila moći da pronađu sve što im je potrebno na jednom mestu.
+            Zajedno imamo preko 30 godina iskustva. Imajte koristi od toga!
+            Ne šaljemo kupce kući - uvek imamo spremno rešenje. Vozila se i dalje popravljaju u našoj radionici. Imamo na umu interese naših kupaca i uvek nudimo najisplativiju popravku.
+            <br>
+            Uživamo u svom poslu. Svaki kupac može da očekuje od nas neograničenu pažnju, ljubaznost, poštovanje i visok nivo usluge svakog dana.
+            <br>
+            <b>Moto: Šefovi lično brinu o usluzi i kvalitetu.</b>
           </p>`,
       },
       {
         title: 'Website',
-        description: `          
-          <p>Website link</p>`,
+        description: `   
+          <a href="https://www.vdautomotive.at/" target="_blank" class="text-decoration-none"><b>VD Automotive</b></a>`,
       },
       {
-        title: 'Čime se bavimo',
+        title: 'Naše usluge',
         description: `          
-          <p>
-             Master car company je vaš pouzdani stručnjak za sve brendove automobila. Naša posvećena ekipa stručnjaka je tu da vam pruži vrhunsku uslugu i podršku, nezavisno od toga koji brend vozila posedujete. Bez obzira da li vam je potrebno redovno održavanje, popravka ili savet u vezi sa vašim automobilom, možete računati na nas da vam pružimo najbolju moguću podršku. Vaša sigurnost i zadovoljstvo su naš prioritet, a Master car company je tu da ispuni sve vaše potrebe u vezi sa automobilima.
-          </p>`,
+          <p>Radno vreme mehaničara: 120,00 €</p>
+          <p>Radni sati za krovopokrivača/slikara: 192,00 €</p>
+          <p>Poravnanje šasije: 100,00 €</p>
+          <p>Servis klima uređaja sa dezinfekcijom: 119,00 €</p>
+          <p>Servis klima uređaja bez dezinfekcije: 99,00 €</p>
+          <p>Popravka kamenčića po kamenčiću: 36,00 €</p>
+          <p>Zimski pregled: 29,00 €</p>
+          <p>Proljetni pregled: 29,00 €</p>
+          <p>Pregled prije putovanja: 29,00 €</p>
+          <p>Čitanje grešaka: 30,00 €</p>
+          <p>Dnevna parking karta po danu: 5,00 €</p>
+          `,
       }
     ],
     staff: [
-      // {
-      //   name: 'Milan Petrović',
-      //   role: 'Vlasnik',
-      //   img: ''
-      // },
-      // {
-      //   name: 'Petar Petrović',
-      //   role: 'Vlasnik',
-      //   img: ''
-      // },
-      // {
-      //   name: 'Petar Petrović',
-      //   role: 'Električar',
-      //   img: ''
-      // },
-      // {
-      //   name: 'Petra MIhić',
-      //   role: 'Knjigovođa',
-      //   img: ''
-      // }
+      {
+        name: 'Vojkan Novakovic',
+        role: 'Vlasnik',
+        img: ''
+      },
+      {
+        name: 'Dominik Krstanovic',
+        role: 'Vlasnik',
+        img: ''
+      },
     ],
     jobs: [
       // {

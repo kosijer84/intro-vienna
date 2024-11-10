@@ -1,5 +1,134 @@
 export const CARS_STORY = [
   {
+    id: 'parking_kazna',
+    tag: 'automobili',
+    slug: 'parking_kazna',
+    title: 'Prva parking kazna u Beču',
+    bgTitle: 'Kazne',
+    teaser: 'Prva kazna za parking u Beču, dva meseca kasnije, kako izgleda, koliko košta.',
+    headerImg: 'apcoa-parking.jpg',
+    relatedStory: 'prvi_nepotreban_trosak_u_becu',
+    content: [
+      {
+        title: 'Kako su me kaznili za parking',
+        description: `     
+          <p>
+            Prva poseta ambasadi Srbije u Beču i naravno nigde parkinga.
+          </p>
+          <p>
+            Posle malo kruženja pronašao sam parking u blizini ambasade i parkirao auto. <br>
+            Tip parkinga je bio garaža i cena za sat vremena je bila <b>2.5eur</b> po satu.
+          </p>
+          <p>Šta je ovde bilo interesantno? <br>
+            Parking rampa se renovirala i nije postojala opcija da se parking plati jer nisam mogao uzeo karticu za parking.
+          </p>
+          <p>Majstori naravno nemaju pojma, kažu samo parkiraj. To sam i uradio.</p>
+          <p></p>`,
+      },
+      {
+        title: 'Dva meseca kasnije, parking kompanija - APCOA',
+        description: `     
+          <ul>
+            <li>Parkentgelt - 2.5eur</li>
+            <li>Behördliche Abgabe zur Halteranfrage - 15.3eur</li>
+            <li>Bearbeitung, Kontrolle, Versand - 19.7eur</li>
+            <li><b>Ukupno: 37.5eur</b></li>
+          </ul>
+          <p>Dva meseca posle, stiže pismo od pomenute kompanije da nisam platio parking i da je kazna za to 37.5eur.</p>
+          <p>Znači neko je iako nije postojala mogućnost uzimanja kartice, obišao automobile, popisao sve automobile koji nisu imali plaćen parking i poslao kazne.</p>
+          <p>Najskupljih pola sata parkinga koje sam platio u životu. <b>Nemogućnost plaćanja parkinga vas neće spasiti od kazne.</b></p>`,
+      },
+    ],
+    date: new Date('2024-11-09').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
+    id: 'osiguranje_automobila',
+    tag: 'automobili',
+    slug: 'osiguranje_automobila',
+    title: 'Osiguranje automobila u Austriji - Allianz',
+    bgTitle: 'Osiguranje',
+    teaser: 'Poskupljenje osiguranja bez neke velike najave.',
+    headerImg: 'car-insurance.webp',
+    relatedStory: 'prvi_nepotreban_trosak_u_becu',
+    content: [
+      {
+        title: 'Poskupljenje osiguranja',
+        description: `     
+          <p>
+            Osiguranje za automobil sam uzeo kod Allianz osiguranja. <br>
+            Na dan 1. Septembar, 2023. godine, cena osiguranja za moj VW Tiguan 2017g. je bila <b>122,19eur</b> na mesečnom nivou.
+          </p>
+          <p>Sa novim poskupljenjem osiguranje plaćam <b>127,82eur</b>. što je poskupljenje od nekih <b>5,50eur</b>.</p>
+          <p>Šta je ovde interesantno? <br>
+            Isto kao i u Srbiji, trebalo bi ako niste imali udesa da se premija smanjuje i da prelazite u drugi rang osiguranja <b>ALI</b> <br>
+            naravno da se to ne dešava.
+          </p>
+          <p>Tačnije možda se i dešava, nisam iskreno ni pokušavao da saznam ali činjenica je da je toliko minimalno umanjeno da je poskupelo za <b>5,5eur</b>.</p>
+          <p><b>Info</b>: Automobil je <b>2.0D/150KS</b>, čisto da možete da uporedite sa nečim a osiguranje je polu kasko.</p>`,
+      },
+    ],
+    date: new Date('2024-10-06').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
+    id: 'prvi_tehnicki_pregled',
+    tag: 'automobili',
+    slug: 'prvi_tehnicki_pregled',
+    title: 'Prvi tehnički pregled - VW Tiguan 2017g',
+    bgTitle: 'Tehnički',
+    teaser: 'Gde odraditi tehnički pregled, šta treba pripremiti od papira, koliko traje.',
+    headerImg: 'tehnical-inspection.webp',
+    relatedStory: 'zamena_vozacke',
+    content: [
+      {
+        title: 'O nalepnici - Pickerl',
+        description: `     
+          <p>
+            <b>Pickerl</b> - Konkretno za nalepnicu ću navesti svoj primer. Moja nalepnica je validna do Jula meseca 2024. godine.
+          </p>
+          <p>Šta je interesantno? <br> Nalepnica koja važi do Jula meseca, automobil je tehnički ispravan još 4 meseca ali ovo važi samo za <b>Austriju</b>.</p>
+          <p><b>Mesec</b> dana ranije se može odraditi tehnički pregled.</p>`,
+      },
+      {
+        title: 'Šta je potrebno o papira, kako pripremiti auto?',
+        description: `
+          <p>
+            Od papira je dovoljna samo saobraćajna dozvola. :) <br>
+            Auto sam oprao mada nije bilo napomenuto da mora ali to se valjda podrzaumeva. :)
+          </p>`,
+      },
+      {
+        title: 'Cena i pregled',
+        description: `
+          <p>Pregled sam zakazao par dana unapred i trajao je 30ak minuta.</p>          
+          <p>Cena za tehnički pregled je <b>75eur</b>.</p>
+          <p>Auto je prošao tehnički pregled bez problema i nalepnica je validna narednih godinu dana.</p>`,
+      },
+      {
+        title: 'Gde odraditi tehnički pregled?',
+        description: `
+          <p>Interesantna stvar je da za razliku od Srbije tehnički pregled obavljaju servisi automobila a ne kompanije koje su kao u Srbiji zadužene samo za tehnički pregled.</p>          
+          <p>Ja sam tehnički pregled odradio u 10. okrugu jer tu i živim, ima ih jako puno u mom okruženju, <br> međutim radi lakše komunukacije odradio sam ga u servisu gde je vlasnik naš vlasnik :).</p>
+          <p>Tehnički pregled samo odradio kod <a href="https://odlazakuaustriju.com/profesije/automobili/vd_automotive"><b>VD Automotive</b></a>. <br>
+          <b>Preporuka za profesionalnost.</b> 
+          </p>
+          <p>Auto je prošao tehnički pregled bez problema i nalepnica je validna narednih godinu dana.</p>`,
+      },
+    ],
+    date: new Date('2024-07-10').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
     id: 'lekarski_pregled_za_zamenu_vozacke',
     tag: 'automobili',
     slug: 'lekarski_pregled_za_zamenu_vozacke',

@@ -1,5 +1,55 @@
 export const FLAT_STORY = [
   {
+    id: 'provajder_za_struju_',
+    tag: 'stanovi',
+    slug: 'stan_u_becu_provajder_za_struju',
+    title: 'Provajder za električnu energiju',
+    bgTitle: 'Struja',
+    teaser: 'Kako odabrati provajdera za struju, gde ih pronaći i istražiti, koje garancije nude',
+    headerImg: 'el-provider.webp',
+    relatedStory: 'mesecni_troskovi_stan',
+    content: [
+      {
+        title: 'Prva ponuda el. provajdera sa stanom',
+        description: `          
+          <p>
+            U Beču postoje razni provajderi za isporuku el. energije gde morate da se opredelite za jednog kao što birate mobilnog operatera.
+          </p>
+          <p>
+            Mi nismo imali nešto preterano iskustva sa ovim naravno, međutim kompanija koja nam renta stan naravno da je već imala spremnu ponudu od određenog provajdera 
+            kako što MTS kod nas uleti u sve zgrade koje su u izgradnji.
+          </p>
+           <p>
+            Provajder koji nam je ponuđen je <a href="https://oekostrom.at/" target="_blank">Oekostrom</a>.
+            Na kraju se ispostavilo kada sam pričao sa kolegama da ponuda uopšte nije loša u odnosu na ono što se trenutno nudi na tržištu.
+            Dobili smo garancije da se <b>cena neće menjati u narednih godinu dana</b>.
+          </p>`,
+      },
+      {
+        title: 'Kako izabrati el. provajdera',
+        description: `          
+          <p>
+            Najbolje je da se uporede ponude svih električnih provajdera i uzeti naravno najpovoljniju ponudu. Vezani ste neko vreme za tog provajdera 
+            naravno ali takođe možete ga promeniti nakon isteka ugova kao i mobilni operater.
+          </p>
+          <p>
+            Na ovom <a href="https://durchblicker.at/strom/vergleich/ergebnis#calcid=c9d79793a8b41db631fdaeb1e47c8e1ebcf2ef9a" target="_blank">Linku</a>
+            možete videti ponudu svih provajdera i izabrati koji vi mislite da je najbolji za vas.
+          </p>
+          <p>Mesečna cena je <b>paušalna</b> i na kraju godine se sve sabira i oduzima i naravno ako ima viška provajder vam vraća novac, manjak naplaćuje dodatno.
+          </p>
+          <p>Što ste više godina kod jednog provajdera, sve je tačniji mesečni paušalni proračun.
+          <b>Naš trenutni mesečni paušalni proračun je 140 eur.</b>
+          </p>`,
+      }
+    ],
+    date: new Date('2023-10-13').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
     id: 'stan_u_becu_provajder_za_struju',
     tag: 'stanovi',
     slug: 'stan_u_becu_provajder_za_struju',

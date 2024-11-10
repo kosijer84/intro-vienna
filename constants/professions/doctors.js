@@ -1,5 +1,43 @@
 export const DOCTORS_PROFESSION= [
   {
+    id: 'andreja_petrovic',
+    tag: 'doktori',
+    subTag: ['oftalmolog', 'specijalista'],
+    slug: 'andreja_petrovic',
+    title: 'Dr. Andreja Petrović',
+    bgTitle: 'Opšta praksa',
+    teaser: 'Zakazivanje po dogovoru (takođe subotom i državnim praznicima)',
+    headerImg: 'ordination-petrovic.jpg',
+    companyExternalLink: 'https://ordination-petrovic.at/',
+    proPage: true,
+    promo: false,
+    date: new Date('2024-11-10').getTime(),
+    workshopPlace: {
+      city: '1100 Beč',
+      name: 'Dr. Andreja Petrović',
+      address: 'Davidgasse 7/17',
+      number: '+43 660 669 80 40',
+      email: 'ordinationpetrovic@gmail.com',
+      insurance: '',
+      workingTime: {}
+    },
+    content: [
+      {
+        title: 'Ordinacija',
+        description: `
+        <ul>
+          <li>Specijalista oftalmologije i optometrije</li>
+          <li>Viši lekar u Regionalnoj bolnici Viner Nojštat</li>
+          <li>Doktor opšte medicine</li>
+          <li>Doktor akupunkture</li>
+        </ul>
+        `,
+      },
+    ],
+    staff: [],
+    jobs: []
+  },
+  {
     id: 'jelena_zilic',
     tag: 'doktori',
     subTag: ['opsta-praksa'],

@@ -1,5 +1,99 @@
 export const GENERAL_STORY = [
   {
+    id: 'ocni_pregled_u_becu',
+    tag: 'uopsteno',
+    slug: 'ocni_pregled_u_becu',
+    title: 'Očni pregled u Beču',
+    bgTitle: 'Oči',
+    teaser: 'Klinac se žali na glavobolju, muti mu se vid, odlazak kod očnog lekara',
+    headerImg: 'eye-doctor.webp',
+    relatedStory: 'hitna_pomoc_prvi_susret',
+    content: [
+      {
+        title: 'Odlazak u hitnu pomoć',
+        description: `          
+          <p>Nažalost tokom čitave nedelje klinac se žalio na glavobolju, da mu se muti i duplira vid dok čita.</p>
+          <p>Sve ovo je bio alarm da posetimo lekara tako da smo odlučili da posetimo hitnu pomoć jer je bio vikend.</p>
+          <p>
+            Na hitnoj smo prošli sva testiranja da se iskljući mogućnost neurološkog poremećaja.<br>
+            Kada su to isključili, savetovali su nas da posetimo očnog lekara i ako se slučajno pogorša stanje da se javimo odmah.
+          </p>`,
+      },
+      {
+        title: 'Očni lekar - potraga i pregled',
+        description: `          
+          <p>Naravno tražili smo lekara za naše govorno područje :) i da je lekar što bliže nama, tačnije u 10. okrugu.</p>
+          <p>
+            Nažalost, lekari koji su pokriveni osiguranjem pregled se čeka do mesec i po dana <br>
+            tako da smo odlučili da odemo kod privatnog lekara koji je bio slobodan za 2 dana.</p>
+          </p>
+          <p>
+            Lekar je <b>dr. Andreja Petrović</b> i link do njegovog sajta možete pronaći ovde <br>
+            <a href="https://ordination-petrovic.at/" target="_blank" class="text-decoration-none fw-bold">ordination-petrovic.at</a>
+          </p>
+          <p>Pregled je završen uspešno, dobili smo izveštaj i savete lekara šta dalje raditi.</p>`,
+      },
+    ],
+    date: new Date('2024-11-10').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
+    id: 'prvi_nepotreban_trosak_u_becu',
+    tag: 'uopsteno',
+    slug: 'prvi_nepotreban_trosak_u_becu',
+    title: 'Uh, prvi nepotreban trošak u Beču',
+    bgTitle: 'Kazna',
+    teaser: 'Nisam želeo da platim novo godišnje osiguranje za stan, kazna je stigla.',
+    headerImg: 'allianz.webp',
+    relatedStory: '',
+    content: [
+      {
+        title: 'Allianz godišnje osiguranje stana',
+        description: `          
+          <p>
+            Kada smo se uselili u stan, dobili smo ponudu za godišnje osiguranje stana od Allianz-a u iznosu od nekih 130eur.
+          </p>
+          <p>
+            Ove godine mi je to delovalo kao nepotreban trošak i odlučim da njihov mail o isticanju polise ignorišem. <br>
+            <b>Moram napomenuti da je pri potpisivanju ugovora rečeno da je ugovor na godinu dana.</b>
+          </p>
+          <p><b>Prva opomena</b> je stigla u Julu mesecu - ja ignorišem :).</p> 
+          <p><b>Druga opomena</b> je stigla u Avgustu mesecu - ja ignorišem :).</p> 
+          <p><b>Treća opomena</b> je stigla u Septembru mesecu ali od kompanije koja uslužno naplaćuje dugove - ne ignorišem više :).</p>`,
+      },
+      {
+        title: 'Kompanija koja naplaćuje dugove',
+        description: `          
+          <p>
+            Ovo je kompanija koja uslužno naplaćuje dugove za Allianz. <br>
+            U pitanju je <a href="https://www.meinfall.at/ksvportal/" target="_blank" class="fw-bold text-decoration-none">KSV Portal</a>. 
+          </p>
+          <p>
+            Kompanija da bi naplatila dug, šalje vam pismo sa uplatnicom i rokom od 20 dana da izmirite dug. <br>
+            Svoju uslugu naplaćuju <b>80eur.</b>
+          </p>
+          <p>E sada više nije smešno :(</p>`,
+      },
+      {
+        title: 'Rast duga',
+        description: `          
+          <p>Dug je od <b>130eur</b> narastao na <b>280eur</b>. <br> </p>
+          <p>Hteo sam ja još malo da se inatim i da ih zovem i bunim se međutim pre zvanja krenem da pročitam ugovor čisto da ne proplivam. :)</p>
+          <p>U ugovoru piše da je ugovor na godinu dana i da se automatski produžava do 2033. godine, ukoliko se ne otkaže mesec dana pre isteka ugovora.</p>
+          <p>O-o, ovo znači da im ne mogu ništa i da moram da platim dug. :(</p>
+          <p>Opomene više ne dolaze i ovo je jedna lepa škola koja je koštala nešto više od <b>150eur</b>.</p>`,
+      },
+    ],
+    date: new Date('2024-10-04').getTime(),
+    storyWriter: {
+      name: 'Petar Dragić',
+      img: 'pd-img.png'
+    }
+  },
+  {
     id: 'prvi_rodjendan_u_becu',
     tag: 'uopsteno',
     slug: 'prvi_rodjendan_u_becu',
